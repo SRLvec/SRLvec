@@ -1,7 +1,10 @@
 #loop through Bitter Lemons Corpus and identify viewpoint
 import os,re
 
-folder = os.path.join('/Users', 'charleywu', 'Desktop', 'Corpora', 'BitterLemons', 'docs')
+#Working directory variable
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+folder = os.path.join(__location__, 'Corpora', 'BitterLemons', 'docs')
 
 Israel =[]
 Palestine = []
